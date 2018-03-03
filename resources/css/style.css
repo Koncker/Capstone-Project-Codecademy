@@ -83,6 +83,34 @@ header .header_logo {
 	width: 3rem;
 }
 
+@media only screen and (max-width:740px) {
+
+	header .mobile {
+		display: block;
+		width: 100%;
+		height: 4rem;
+	}
+
+	nav li {
+		margin: auto;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+		height: 4rem;
+	}
+
+	header .desktop {
+		display: none;
+	}
+
+	header .logo, header .content .header_logo {
+		display: none;
+	}
+
+}
+
 /* Banner Section */
 
 .start {
@@ -135,6 +163,48 @@ header .header_logo {
 	padding: 1.25rem 0;
 	background-color: #a4c739;
 	font-weight: bold;
+}
+
+@media only screen and (max-width: 740px) {
+	.start {
+		padding-top: 4rem;
+	}
+
+	.start .start_content {
+		flex-direction: column;
+	}
+
+	.start_content .banner_image {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.start .content {
+		margin: 0;
+	}
+
+	.start .start_here {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.start .start_button {
+		font-size: 1.25rem;
+		padding: 1rem 0;
+		width: 90%;
+		font-weight: bold;
+	}
+
+	.start .start_button:hover {
+		font-size: 1.25rem;
+		padding: 1rem 0;
+		width: 90%;
+		font-weight: bold;
+	}
+
+	.start h1 {
+		margin-bottom: 2rem;
+	}
 }
 
 /* Info Section */
@@ -220,51 +290,116 @@ header .header_logo {
 	background-color: lightgray;
 }
 
-/* Learning Section - Courses */
+@media only screen and (max-width: 740px) {
 
-.learning {
-	background-color: lightgray;
+	.practice {
+		display: none;
+	}
+
+	.highlights {
+		width: 100%;
+		border: 0;
+		margin-bottom: 2rem;
+	}
+
+	.highlight {
+		border: 0;
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+	}
+
+	.highlight_image {
+		width: 100%;
+		height: auto;
+		padding: 0;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.highlight img {
+		width: 100%;
+	}
+
+	.guest {
+		background-color: white;
+	}
+
 }
 
-.learning h1 {
-	padding: 2rem 0;
-	text-align: center;
+	/* Learning Section - Courses */
+
+	.learning {
+		background-color: lightgray;
+	}
+
+		.learning h1 {
+			padding: 2rem 0;
+			text-align: center;
+		}
+
+	.courses {
+		margin: 0 3.5rem 1rem 3.5rem;
+		display: flex;
+		flex-wrap: wrap;
+		flex-shrink: 1;
+		justify-content: center;
+	}
+
+	.course {
+		background-color: white;
+		margin-bottom: 2rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+		.course a {
+			display: block;
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.course p {
+			margin-bottom: 1.5rem;
+		}
+
+		.course h4 {
+			margin-top: 1rem;
+		}
+
+		.course h4, .course a, .course p {
+			margin-left: 1rem;
+		}
+
+@media only screen and (max-width: 740px) {
+
+	.course img, .course p, .course a {
+		display: none;
+	}
+
+	.learning {
+		background-color: white;
+		border-top: 1px solid lightgray;
+	}
+
+	.courses {
+		padding-bottom: 1.75rem;
+		margin: 0;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.course {
+		width: 100%;
+		background-color: lightgray;
+		margin: 0.25rem 0 0.25rem 0;
+		padding: 1rem 0 1.5rem 1rem;
+	}
+
 }
 
-.courses {
-	margin: 0 3.5rem 1rem 3.5rem;
-	display: flex;
-	flex-wrap: wrap;
-	flex-shrink: 1;
-	justify-content: center;
-}
-
-.course {
-	background-color: white;
-	margin-bottom: 2rem;
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
-.course a {
-	display: block;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-}
-
-.course p {
-	margin-bottom: 1.5rem;
-}
-
-.course h4 {
-	margin-top: 1rem;
-}
-
-.course h4, .course a, .course p {
-	margin-left: 1rem;
-}
-
-/* Thesis Section */
+	/* Thesis Section */
 
 .thesis {
 	display: flex;
@@ -300,8 +435,24 @@ header .header_logo {
 	width: 100%;
 }
 
-.exhibit_video video {
-	width: 100%;
+		.exhibit_video video {
+			width: 100%;
+		}
+
+@media only screen and (max-width: 740px) {
+
+	.thesis .highlights {
+		display: none;
+	}
+
+	.thesis .content h4, .thesis .content p {
+		display: none;
+	}
+
+	.thesis .content {
+		width: 100%;
+	}
+
 }
 
 /* Footer Section */
@@ -318,6 +469,7 @@ footer {
 footer p {
 	margin-top: 1rem;
 	flex: 1;
+	font-size: 1rem;
 }
 
 footer ul {
@@ -330,7 +482,7 @@ footer ul li {
 }
 
 footer ul li a {
-	font-size: 1.25rem;
+	font-size: 1rem;
 }
 
 footer ul li a:hover {
