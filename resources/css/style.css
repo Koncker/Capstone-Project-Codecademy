@@ -186,6 +186,12 @@ header .header_logo {
 	.start .start_here {
 		width: 100%;
 		margin-bottom: 2rem;
+		margin-left: 0;
+	}
+
+	.start_here h1, .start_here h4, .start_here a {
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 
 	.start .start_button {
@@ -239,15 +245,14 @@ header .header_logo {
 
 .highlights {
 	width: 40%;
-	border-left: 1px solid gray;
+	border-left: 1px solid lightgray;
 	padding-top: 1rem;
 }
 
 .highlight {
 	display: flex;
-	border-bottom: 2px double gray;
+	border-bottom: 2px double lightgray;
 	padding-left: 16px;
-	margin-bottom: 1px;
 }
 
 .highlight_info {
@@ -497,7 +502,7 @@ header .header_logo {
 footer {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
-	border-top: 1px solid gray;
+	border-top: 1px solid lightgray;
 	display: flex;
 	align-items: center;
 	padding-bottom: 3rem;
